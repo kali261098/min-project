@@ -21,6 +21,7 @@ async function login() {
         const response = await axios.get('http://localhost:8080/user/login?email=' + email);
         console.log(response);
         if (response.status == 200) {
+            var k = 'dfd';
             const dbpass = response.data.password;
             if (dbpass == pass) {
                 console.log("Login sucessfully");
