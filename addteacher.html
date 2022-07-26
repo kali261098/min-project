@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="register.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="addteacher.js"></script>
+</head>
+
+<body>
+    <center>
+        <table>
+            <tr>
+                <td><label for="text"><b> Name</b></label></td>
+                <td><input type="text" placeholder="Enter name" name="fullname" id="fullname" required ]]></td>
+            </tr>
+            <tr>
+                <td><b> Phone Number </b></td>
+                <td><input type="text" name="phnno" id="phone"></td>
+            </tr>
+            <tr>
+                <td><label for="email"><b>Email</b></label></td>
+                <td><input type="text" placeholder="Enter Email" name="email" id="email" value="" required></td>
+                <br> <br>
+            </tr>
+            <tr>
+                <td><label for="dob"><b>Date of Birth</b></label></td>
+                <td><input type="date" placeholder="Date of birth" name="dob" id="dob" value="" required></td>
+                <br> <br>
+            </tr>
+            <tr>
+                <td><label for="gender"><b>Gender</b></label></td>
+                <td><input type="text" placeholder="Ente gender" name="gender" id="gender" value="" required></td>
+                <br> <br>
+            </tr>
+            <tr>
+                <td><label for="address"><b>Address</b></label></td>
+                <td><input type="text" placeholder="Enter address" name="address" id="address" value="" required></td>
+                <br> <br>
+            </tr>
+            <tr>
+                <td><label for="degree"><b>Higehest Degree</b></label></td>
+                <td><input type="text" name="degree" id="degree" value="" required></td>
+                <br> <br>
+            </tr>
+            <tr>
+                <td><label for="exp"><b>Experience</b></label></td>
+                <td><input type="text" name="exp" id="exp" value="" required></td>
+                <br> <br>
+            </tr>
+            <tr>
+                <td><label for="spc"><b>specialization</b></label></td>
+                <td><input type="text" name="spc" id="spc" value="" required></td>
+                <br> <br>
+            </tr>
+
+
+        </table>
+        <button type="submit" onclick="addTeacher()" class="registerbtn">Add Teacher</button>
+    </center>
+
+
+
+
+</body>
+
+</html>

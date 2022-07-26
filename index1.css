@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: system-ui, 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.heading {
+    display: flex;
+    padding: 10px;
+}
+
+.container {
+    height: 150px;
+    width: 150px;
+    position: relative;
+}
+
+.container img {
+    height: 100%;
+    width: 100%;
+}
+
+.overlay1 {
+    position: absolute;
+    content: '';
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    background: hsl(0 0% 0% / .56);
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4px;
+    transition: .4s;
+}
+
+
+.slideshow-container{
+    height: 700px;
+}
+
+.overlay h1 {
+    font-size: 1.7rem;
+    color: #fff;
+}
+
+
+.heading span {
+    flex: 1;
+    align-self: center;
+    text-align: center;
+}
+
+.d {
+    float: right;
+}
+
+.college {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(./kct8.png);
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    height: 80%;
+    width: 100%;
+    background: hsl(0 0% 0% / .716);
+    color: hsl(0 0% 100% / .78);
+    transition: cubic-bezier(1, 0, 0, 1) ease;
+    opacity: 0;
+    font-family: system-ui, sans-serif;
+    line-height: 1.8;
+    padding: 20px 50px;
+    text-align: center;
+    overflow-x: auto;
+
+}
+
+.overlay::-webkit-scrollbar {
+    width: 5px;
+    background: transparent;
+}
+
+.overlay::-webkit-scrollbar-thumb {
+    background: hsl(27 84% 50%);
+}
+
+.overlay h1 {
+    margin-bottom: 1.3rem;
+    font-size: 2em;
+}
+
+.overlay p {
+    margin: auto;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    color: hsl(0 0% 100% / .68);
+    font-size: 1.25rem;
+}
+
+.college:hover .overlay {
+    opacity: 1;
+}
