@@ -1,0 +1,44 @@
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title> Login Form </title>
+    <link rel="stylesheet" href="login1.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="login.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <div class="bg-image"></div>
+    <div class="center">
+
+        <div class="container">
+
+            <div class="text">
+                Login
+            </div>
+            <div class="form">
+                <div class="data">
+                    <label>Email </label>
+                    <input type="text" id="email" required>
+                </div>
+                <div class="data">
+                    <label>Password</label>
+                    <input type="password" id="psw" required>
+                </div>
+                <div class="forgot-pass">
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <div class="btn">
+                    <div class="inner"></div>
+                    <button type="submit" onclick="login()">login</button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>

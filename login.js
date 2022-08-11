@@ -9,7 +9,9 @@ async function login() {
         if (pass == "admin@123") {
             console.log("Login sucessfully");
             alert("Login sucessfully");
+            alert("http://127.0.0.1:5500/admin.html")
             window.location = "http://127.0.0.1:5500/admin.html"
+            // location.replace("http://127.0.0.1:5500/admin.html")
 
         }
         else {

@@ -5,9 +5,12 @@
 }
 
 body {
+
+
     height: 100vh;
     font-family: system-ui, 'Segoe UI', sans-serif;
     scroll-behavior: smooth;
+
 }
 
 .heading {
@@ -19,6 +22,7 @@ body {
     height: 150px;
     width: 150px;
     position: relative;
+
 }
 
 .container img {
@@ -43,7 +47,7 @@ body {
 }
 
 
-.slideshow-container{
+.slideshow-container {
     height: 700px;
 }
 
@@ -116,4 +120,10 @@ body {
 
 .college:hover .overlay {
     opacity: 1;
+}
+
+.his {
+
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+
 }

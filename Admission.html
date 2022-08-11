@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <!---<title> Responsive Registration Form | CodingLab </title>--->
+    <link rel="stylesheet" href="admission.css">
+    <script type="text/javascript" src="admission.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<div class="bg-image"></div>
+    <div class="container">
+        <div class="title"> MCA Admission</div>
+        <div class="content">
+            <form action="index.html">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Full Name</span>
+                        <input type="text" placeholder="Enter your name" id="fullname" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Date of Birth</span>
+                        <input type="date" placeholder="Enter your Date of birth" id="dob" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="text" placeholder="Enter your email" id="email" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Phone Number</span>
+                        <input type="text" placeholder="Enter your number" id="phone" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Address</span>
+                        <input type="text" placeholder="Enter your address" id="address" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">City</span>
+                        <input type="text" placeholder="Enter your city" required>
+                    </div>
+
+                </div>
+                <div class="gender-details">
+                    <input type="radio" name="gender" value="Male" id="dot-1">
+                    <input type="radio" name="gender" value="Female" id="dot-2">
+                    <input type="radio" name="gender" value="Not to say" id="dot-3">
+                    <span class="gender-title">Gender</span>
+                    <div class="category">
+                        <label for="dot-1">
+                            <span class="dot one"></span>
+                            <span class="gender">Male</span>
+                        </label>
+                        <label for="dot-2">
+                            <span class="dot two"></span>
+                            <span class="gender">Female</span>
+                        </label>
+                        <label for="dot-3">
+                            <span class="dot three"></span>
+                            <span class="gender">Prefer not to say</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">UG College Name</span>
+                        <input type="text" placeholder="Enter your Ug college name" id="ug" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">UG percentage</span>
+                        <input type="text" placeholder="Enter your ug percentage" id="ugper" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">HSC School Name</span>
+                        <input type="text" placeholder="Enter your Hsc school name" id="hsc" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Hsc percentage</span>
+                        <input type="text" placeholder="Hsc percentage" id="hscper" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">SSLC school name</span>
+                        <input type="text" placeholder="Enter your SSLC school name" id="sslc" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">SSLC percentage</span>
+                        <input type="text" placeholder="Enter your SSLC percentage" id="sslcper" required>
+                    </div>
+                </div>
+
+
+                <div class="button">
+                    <input type="submit" value="Apply" onclick="apply()">
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

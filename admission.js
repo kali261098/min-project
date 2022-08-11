@@ -1,5 +1,5 @@
 
-function register() {
+function apply() {
 
     const name = document.getElementById("fullname").value;
     console.log(name);
@@ -9,7 +9,13 @@ function register() {
     console.log(email);
     const dob = document.getElementById("dob").value;
     console.log(dob);
-    const gender = document.getElementById("gender").value;
+    let gender = 'Male';
+    const genderlist = document.getElementsByName("gender");
+    for (i = 0; i < genderlist.length; i++) {
+        if (genderlist[i].checked) {
+            gender = genderlist[i].value;
+        }
+    }
     console.log(gender);
     const address = document.getElementById("address").value;
     console.log(address);

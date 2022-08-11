@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Teacher</title>
+    <link rel="stylesheet" href="addteacher2.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="addteacher2.js"></script>
+</head>
+
+<body>
+    <div class="bg-image"></div>
+
+    <div class="wrapper">
+        <div class="title">
+            Add Teacher
+        </div>
+        <div class="form">
+            <div class="inputfield">
+                <label>Name</label>
+                <input type="text" class="input" id="fullname" required>
+            </div>
+            <div class="inputfield">
+                <label>Phone Number</label>
+                <input type="text" class="input" id="phone">
+            </div>
+            <div class="inputfield">
+                <label>Email</label>
+                <input type="email" class="input" id="email">
+            </div>
+            <div class="inputfield">
+                <label>Date of Birth</label>
+                <input type="date" class="input" id="dob">
+            </div>
+
+            <div class="inputfield">
+                <label>Gender</label>
+                <input type="text" class="input" id="gender">
+            </div>
+            <div class="inputfield">
+                <label>Address</label>
+                <textarea class="textarea" id="degree"></textarea>
+            </div>
+            <div class="inputfield">
+                <label>Higehest Degree</label>
+                <input type="text" class="input" id="address">
+            </div>
+            <div class="inputfield">
+                <label>Experience</label>
+                <input type="text" class="input" id="exp">
+            </div>
+            <div class="inputfield">
+                <label>specialization</label>
+                <input type="text" class="input" id="spc">
+            </div>
+            <div class="inputfield">
+                <button type="submit" onclick="addTeacher()" class="btn">Add Teacher</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
