@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Custom Select Menu in JavaScript | CodingNepal</title>
+    <link rel="stylesheet" href="viewMark.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Iconscout Link For Icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<body>
+    <div class="bg-image"></div>
+    <button onclick="window.print()">Print this page</button>
+    <div class="wrapper">
+        <div class="select-btn">
+            <span>Select Subject</span>
+            <i class="uil uil-angle-down"></i>
+        </div>
+        <div class="content">
+            <div class="search">
+                <i class="uil uil-search"></i>
+                <input spellcheck="false" type="text" placeholder="Search">
+            </div>
+            <ul class="options"></ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <table>
+                <tr>
+                    <th>Unit Test</th>
+                    <th>Mark</th>
+                </tr>
+                <tr>
+                    <td>Unit Test 1</td>
+                    <td id="ut1">--</td>
+                </tr>
+                <tr>
+                    <td>Unit Test 2</td>
+                    <td id="ut2">--</td>
+                </tr>
+                <tr>
+                    <td>Unit Test 3</td>
+                    <td id="ut3">--</td>
+                </tr>
+                <tr>
+                    <td>Final Unit Test</td>
+                    <td id="tut">--</td>
+                </tr>
+            </table>
+        </div>
+        <div class="column">
+            <table id="t2">
+                <tr>
+                    <th>Assignment</th>
+                    <th>Mark</th>
+                </tr>
+                <tr>
+                    <td>Assignment Mark 1</td>
+                    <td id="at1">--</td>
+                </tr>
+                <tr>
+                    <td>Assignment Mark 2</td>
+                    <td id="at2">--</td>
+                </tr>
+                <tr>
+                    <td>Assignment Mark 3</td>
+                    <td id="at3">--</td>
+                </tr>
+                <tr>
+                    <td>Final Assignment Mark</td>
+                    <td id="tat">--</td>
+                </tr>
+            </table>
+        </div>
+        <div class="column">
+            <table>
+                <tr>
+                    <th>Consolidated</th>
+                    <th>Mark</th>
+                </tr>
+                <tr>
+                    <td>Internal Mark</td>
+                    <td id="im">--</td>
+                </tr>
+                <tr>
+                    <td>External Mark</td>
+                    <td id="em">--</td>
+                </tr>
+                <tr>
+                    <td>Total Mark</td>
+                    <td id="tm">--</td>
+                </tr>
+                <tr>
+                    <td>CGPA</td>
+                    <td id="cgpa">--</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="viewMark.js"></script>
+
+</body>
+
+</html>

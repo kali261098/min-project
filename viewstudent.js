@@ -1,5 +1,5 @@
 
-fetch('http://localhost:8080/admin/viewStudent')
+fetch('http://localhost:8081/admin/viewStudent')
     .then(function (response) {
         return response.json();
     }).then(function (apiJsonData) {
@@ -49,11 +49,11 @@ function renderDataInTheTable(studentList) {
 function approve(email) {
     console.log(email);
 
-    fetch('http://localhost:8080/admin/approveStudent?email=' + email)
+    fetch('http://localhost:8081/admin/approveStudent?email=' + email)
         .then(function (response) {
             console.log(apiJsonData);
             console.log("Approved sucessfully");
             alert("Approved sucessfully");
-            window.location = "http://127.0.0.1:5500/viewstuden.html"
+            window.location = "http://127.0.0.1:5500/viewstudent.html"
         })
 }

@@ -33,7 +33,7 @@ function apply() {
     console.log(sslcper);
 
 
-    const Url = 'http://localhost:8080/user/register';
+    const Url = 'http://localhost:8081/user/register';
     const user = {
         name: name,
         phone: phone,
@@ -51,7 +51,7 @@ function apply() {
     }
     const success = function (reponse) {
         console.log("registered successfully");
-        window.location = "http://127.0.0.1:5500/login.html"
+        window.location = "http://127.0.0.1:5500/index.html"
 
     }
 

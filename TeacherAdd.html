@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Detail</title>
+    <link rel="stylesheet" href="AddCourse.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="TeacherAdd.js"></script>
+</head>
+
+<body>
+    <div class="table">
+        <div class="table_header">
+            <h1>Teacher Details</h1>
+            <div>
+                <button class="add_new" onclick="openCourseForm()"> Add Teacher </button>
+            </div>
+        </div>
+        <div class="table_section">
+            <table>
+                <thead>
+                    <tr>
+                        <th>S NO.</th>
+                        <th>Name</th>
+                        <th>Phone Number</th>
+                        <th>Email</th>
+                        <th>Higehest Degree</th>
+                        <th>Subject</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="table-row">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        loadData()
+    </script>
+
+
+    <div class="form" id="courseForm">
+        <div class="content">
+            <span class="close" onclick="closeCourseForm()">&times;</span>
+            <div class="heading">
+                <p>Add Teacher</p>
+            </div>
+            <div class="inputfield">
+                <label>Name</label>
+                <input type="text" class="input" id="fullname" required>
+            </div>
+            <div class="inputfield">
+                <label>Phone Number</label>
+                <input type="text" class="input" id="phone">
+            </div>
+            <div class="inputfield">
+                <label>Email</label>
+                <input type="email" class="input" id="email">
+            </div>
+            <div class="inputfield">
+                <label>Date of Birth</label>
+                <input type="date" class="input" id="dob">
+            </div>
+
+            <div class="inputfield">
+                <label>Gender</label>
+                <input type="text" class="input" id="gender">
+            </div>
+            <div class="inputfield">
+                <label>Address</label>
+                <input type="text" class="input" id="address">
+            </div>
+            <div class="inputfield">
+                <label>Higehest Degree</label>
+                <input type="text" class="input" id="degree">
+            </div>
+            <div class="inputfield">
+                <label>Experience</label>
+                <input type="text" class="input" id="exp">
+            </div>
+            <div class="inputfield">
+                <label>Subject</label>
+                <input type="text" class="input" id="spc">
+            </div>
+            <div class="inputfield">
+                <button type="submit" onclick="addTeacher()" class="btn">Add Subject</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

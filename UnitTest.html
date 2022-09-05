@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="UnitTest.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="UnitTest.js"></script>
+</head>
+
+<body>
+    <div class="bg-image"></div>
+    <div class="table">
+        <div class="table_header">
+            <h1>Unit Test Details</h1>
+            <div>
+                <button class="save" onclick="save()"> Save </button>
+            </div>
+            <div>
+                <button class="submit"> Submit </button>
+            </div>
+        </div>
+        <div class="table_section">
+            <table id="html-data-table">
+                <thead>
+                    <tr>
+                        <th>S NO.</th>
+                        <th>Student Name</th>
+                        <th>Email</th>
+                        <th>Unit Test 1</th>
+                        <th>Unit Test 2</th>
+                        <th>Unit Test 3</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script>
+        loadData()
+    </script>
+</body>
+
+</html>

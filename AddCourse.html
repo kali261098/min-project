@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Detail</title>
+    <link rel="stylesheet" href="AddCourse.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="AddCourse.js"></script>
+</head>
+
+<body>
+    <div class="table">
+        <div class="table_header">
+            <h1>Subject Details</h1>
+            <div>
+                <button class="add_new" onclick="openCourseForm()"> Add Subject </button>
+            </div>
+        </div>
+        <div class="table_section">
+            <table>
+                <thead>
+                    <tr>
+                        <th>S NO.</th>
+                        <th>Subject Code</th>
+                        <th>Subject Name</th>
+                        <th>Credit</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="table-row">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        loadData()
+    </script>
+    
+
+    <div class="form" id="courseForm">
+        <div class="content">
+            <span class="close" onclick="closeCourseForm()">&times;</span>
+            <div class="heading">
+                <p>Add Subject</p>
+            </div>
+            <div class="inputfield">
+                <label>Subject Code</label>
+                <input type="text" class="input" id="scode" required>
+            </div>
+            <div class="inputfield">
+                <label>Subject Name</label>
+                <input type="text" class="input" id="sname">
+            </div>
+            <div class="inputfield">
+                <label>Credit</label>
+                <input type="text" class="input" id="credit">
+            </div>
+            <div class="inputfield">
+                <button type="submit" onclick="addCourse()" class="btn">Add Subject</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

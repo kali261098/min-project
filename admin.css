@@ -34,7 +34,7 @@ body {
 
 .content {
     max-width: 1090px;
-    width: 100%;
+    width: 200%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -46,6 +46,7 @@ body {
     width: calc(33% - 20px);
     text-align: center;
     padding: 15px 30px 30px 30px;
+    margin-top: 3%;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -133,6 +134,11 @@ body {
     background: #11BCC3;
 }
 
+.content .four .top,
+.content .four button {
+    background: #ce1c7e;
+}
+
 .content button:hover {
     filter: brightness(90%);
 }
@@ -146,6 +152,10 @@ body {
 }
 
 .content .three ::selection {
+    background: #d0f9fb;
+}
+
+.content .four ::selection {
     background: #d0f9fb;
 }
 

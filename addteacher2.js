@@ -39,7 +39,7 @@ function addTeacher() {
     console.log(spc);
 
 
-    const Url = 'http://localhost:8080/admin/addTecher';
+    const Url = 'http://localhost:8081/admin/addTecher';
     const user = {
         name: name,
         phone: phone,

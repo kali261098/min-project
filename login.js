@@ -20,7 +20,7 @@ async function login() {
 
     }
     else {
-        const response = await axios.get('http://localhost:8080/user/login?email=' + email);
+        const response = await axios.get('http://localhost:8081/user/login?email=' + email);
         console.log(response);
         if (response.status == 200) {
 
@@ -30,8 +30,10 @@ async function login() {
                 alert("Login sucessfully");
                 const role = response.data.role;
                 if (role == "teacher") {
+                    localStorage.setItem("teacherEmail", email);
                     window.location = "http://127.0.0.1:5500/teacher.html"
                 } else {
+                    localStorage.setItem("studentEmail", email);
                     window.location = "http://127.0.0.1:5500/student.html"
                 }
             }
